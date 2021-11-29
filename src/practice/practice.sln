@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31829.152
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncrementDecerementOperator", "IncrementDecerementOperator\IncrementDecerementOperator.csproj", "{7F07941E-AF85-420C-AC94-98D7A27FDCDC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnaryPlusMinusOpreator", "UnaryPlusMinusOpreator\UnaryPlusMinusOpreator.csproj", "{A67E95D0-B75C-4044-A859-164A5B3E87E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7F07941E-AF85-420C-AC94-98D7A27FDCDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F07941E-AF85-420C-AC94-98D7A27FDCDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F07941E-AF85-420C-AC94-98D7A27FDCDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A67E95D0-B75C-4044-A859-164A5B3E87E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A67E95D0-B75C-4044-A859-164A5B3E87E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A67E95D0-B75C-4044-A859-164A5B3E87E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A67E95D0-B75C-4044-A859-164A5B3E87E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
