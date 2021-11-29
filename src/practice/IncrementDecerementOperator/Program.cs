@@ -19,6 +19,20 @@ namespace IncrementDecerementOperator
             Console.WriteLine(i2);
             Console.WriteLine(i2--);
             Console.WriteLine(i2);
+
+            // Pre Increment/Decrement operator
+            Console.WriteLine("****Example of Pre Increment****");
+            int a = 3;
+            Console.WriteLine(a);
+            Console.WriteLine(++a);
+            Console.WriteLine(a);
+
+
+            Console.WriteLine("****Example of Pre Decrement****");
+            int b = 3;
+            Console.WriteLine(b);
+            Console.WriteLine(--b);
+            Console.WriteLine(b);
         }
     }
 }
