@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IncrementDecerementOperator
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnaryPlusMinusOpreator", "UnaryPlusMinusOpreator\UnaryPlusMinusOpreator.csproj", "{A67E95D0-B75C-4044-A859-164A5B3E87E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetyaandStrings_112A", "PetyaandStrings_112A\PetyaandStrings_112A.csproj", "{207D93F5-BADB-4B7D-94EF-9C9EDBB96919}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetyaandStrings_112A", "PetyaandStrings_112A\PetyaandStrings_112A.csproj", "{207D93F5-BADB-4B7D-94EF-9C9EDBB96919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String_Task_118A", "String_Task_118A\String_Task_118A.csproj", "{85C86E6E-ACB1-4D2B-8AED-859F52230D66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{207D93F5-BADB-4B7D-94EF-9C9EDBB96919}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{207D93F5-BADB-4B7D-94EF-9C9EDBB96919}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{207D93F5-BADB-4B7D-94EF-9C9EDBB96919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85C86E6E-ACB1-4D2B-8AED-859F52230D66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85C86E6E-ACB1-4D2B-8AED-859F52230D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85C86E6E-ACB1-4D2B-8AED-859F52230D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85C86E6E-ACB1-4D2B-8AED-859F52230D66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
