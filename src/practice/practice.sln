@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31829.152
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncrementDecerementOperator", "IncrementDecerementOperator\IncrementDecerementOperator.csproj", "{7F07941E-AF85-420C-AC94-98D7A27FDCDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IncrementDecerementOperator", "IncrementDecerementOperator\IncrementDecerementOperator.csproj", "{7F07941E-AF85-420C-AC94-98D7A27FDCDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnaryPlusMinusOpreator", "UnaryPlusMinusOpreator\UnaryPlusMinusOpreator.csproj", "{A67E95D0-B75C-4044-A859-164A5B3E87E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnaryPlusMinusOpreator", "UnaryPlusMinusOpreator\UnaryPlusMinusOpreator.csproj", "{A67E95D0-B75C-4044-A859-164A5B3E87E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math_Operators", "Math_Operators\Math_Operators.csproj", "{37FA6397-D483-4A36-80D5-A3D9B65E7481}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A67E95D0-B75C-4044-A859-164A5B3E87E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A67E95D0-B75C-4044-A859-164A5B3E87E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A67E95D0-B75C-4044-A859-164A5B3E87E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37FA6397-D483-4A36-80D5-A3D9B65E7481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37FA6397-D483-4A36-80D5-A3D9B65E7481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37FA6397-D483-4A36-80D5-A3D9B65E7481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37FA6397-D483-4A36-80D5-A3D9B65E7481}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
