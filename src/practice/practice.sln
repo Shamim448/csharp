@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnaryPlusMinusOpreator", "U
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetyaandStrings_112A", "PetyaandStrings_112A\PetyaandStrings_112A.csproj", "{207D93F5-BADB-4B7D-94EF-9C9EDBB96919}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String_Task_118A", "String_Task_118A\String_Task_118A.csproj", "{85C86E6E-ACB1-4D2B-8AED-859F52230D66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "String_Task_118A", "String_Task_118A\String_Task_118A.csproj", "{85C86E6E-ACB1-4D2B-8AED-859F52230D66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoyOrGirl_236A", "BoyOrGirl_236A\BoyOrGirl_236A.csproj", "{50BB700E-05FD-4C92-978C-7A76B06212E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{85C86E6E-ACB1-4D2B-8AED-859F52230D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85C86E6E-ACB1-4D2B-8AED-859F52230D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85C86E6E-ACB1-4D2B-8AED-859F52230D66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50BB700E-05FD-4C92-978C-7A76B06212E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50BB700E-05FD-4C92-978C-7A76B06212E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50BB700E-05FD-4C92-978C-7A76B06212E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50BB700E-05FD-4C92-978C-7A76B06212E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
