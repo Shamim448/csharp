@@ -6,43 +6,26 @@ namespace BoyOrGirl_236A
     {
         static void Main(string[] args)
         {
+
             string name = Console.ReadLine().ToLower();
-            
-                int size = name.Length;
-                Char[] checkduplicateletter = name.ToCharArray();
-            int count = 0;
-            
-            for (int i = 0; i < checkduplicateletter.Length; i++)  //5
+            string result = string.Empty;
+            for (int i = 0; i < name.Length; i++)
+            {
+                if (!result.Contains(name[i]))
                 {
-                    
-                    Char ch = checkduplicateletter[i]; //m
-                    for (int j = 0; j < i; j++)
-                    {
-
-                        if (ch == checkduplicateletter[j])
-                        {
-                            count++;
-                        }
-
-                    }
-
-                if (count == 0)
-                {
-                    string result = ch.ToString();
-                    int resultLength = result.Length;
-                    if (resultLength % 2 == 0)
-                    {
-                        Console.WriteLine("CHAT WITH HER!");
-                    }
-                    else
-                    {
-                        Console.WriteLine("IGNORE HIM");
-                    }
+                    result+=name[i];
                 }
-                break;
-
+                
             }
-            
+            //Console.WriteLine(result);
+            if(result.Length % 2 == 0)
+            {
+                Console.WriteLine("CHAT WITH HER!");
+            }
+            else
+            {
+                Console.WriteLine("IGNORE HIM!");
+            }
 
 
         }
