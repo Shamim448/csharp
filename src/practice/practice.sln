@@ -1,19 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31919.166
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IncrementDecerementOperator", "IncrementDecerementOperator\IncrementDecerementOperator.csproj", "{7F07941E-AF85-420C-AC94-98D7A27FDCDC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnaryPlusMinusOpreator", "UnaryPlusMinusOpreator\UnaryPlusMinusOpreator.csproj", "{A67E95D0-B75C-4044-A859-164A5B3E87E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math_Operators", "Math_Operators\Math_Operators.csproj", "{37FA6397-D483-4A36-80D5-A3D9B65E7481}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Math_Operators", "Math_Operators\Math_Operators.csproj", "{37FA6397-D483-4A36-80D5-A3D9B65E7481}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitwise_Operator", "Bitwise_Operator\Bitwise_Operator.csproj", "{B5A057B8-2FBF-4F48-B3DA-5806A0EBDD9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bitwise_Operator", "Bitwise_Operator\Bitwise_Operator.csproj", "{B5A057B8-2FBF-4F48-B3DA-5806A0EBDD9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shift_Operators", "Shift_Operators\Shift_Operators.csproj", "{29AA1406-BF81-4449-8558-682DB775C932}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shift_Operators", "Shift_Operators\Shift_Operators.csproj", "{29AA1406-BF81-4449-8558-682DB775C932}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logical_Operaor", "Logical_Operaor\Logical_Operaor.csproj", "{FECA1D60-151D-4391-8ACF-2D4BCDEB48C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logical_Operaor", "Logical_Operaor\Logical_Operaor.csproj", "{FECA1D60-151D-4391-8ACF-2D4BCDEB48C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compare_Method", "Compare_Method\Compare_Method.csproj", "{223FBFF8-16FB-4FC5-B6DC-69E3F47102E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{FECA1D60-151D-4391-8ACF-2D4BCDEB48C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FECA1D60-151D-4391-8ACF-2D4BCDEB48C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FECA1D60-151D-4391-8ACF-2D4BCDEB48C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{223FBFF8-16FB-4FC5-B6DC-69E3F47102E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{223FBFF8-16FB-4FC5-B6DC-69E3F47102E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{223FBFF8-16FB-4FC5-B6DC-69E3F47102E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{223FBFF8-16FB-4FC5-B6DC-69E3F47102E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
