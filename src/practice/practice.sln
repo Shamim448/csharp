@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31829.152
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IncrementDecerementOperator", "IncrementDecerementOperator\IncrementDecerementOperator.csproj", "{7F07941E-AF85-420C-AC94-98D7A27FDCDC}"
 EndProject
@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shift_Operators", "Shift_Op
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logical_Operaor", "Logical_Operaor\Logical_Operaor.csproj", "{FECA1D60-151D-4391-8ACF-2D4BCDEB48C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compare_Method", "Compare_Method\Compare_Method.csproj", "{223FBFF8-16FB-4FC5-B6DC-69E3F47102E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Compare_Method", "Compare_Method\Compare_Method.csproj", "{223FBFF8-16FB-4FC5-B6DC-69E3F47102E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clasess", "Clasess\Clasess.csproj", "{A491EF30-63DF-4197-BB5D-FC061FCC249A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{223FBFF8-16FB-4FC5-B6DC-69E3F47102E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{223FBFF8-16FB-4FC5-B6DC-69E3F47102E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{223FBFF8-16FB-4FC5-B6DC-69E3F47102E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A491EF30-63DF-4197-BB5D-FC061FCC249A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A491EF30-63DF-4197-BB5D-FC061FCC249A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A491EF30-63DF-4197-BB5D-FC061FCC249A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A491EF30-63DF-4197-BB5D-FC061FCC249A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
