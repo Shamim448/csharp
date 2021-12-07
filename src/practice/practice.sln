@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetyaandStrings_112A", "Pet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "String_Task_118A", "String_Task_118A\String_Task_118A.csproj", "{85C86E6E-ACB1-4D2B-8AED-859F52230D66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoyOrGirl_236A", "BoyOrGirl_236A\BoyOrGirl_236A.csproj", "{50BB700E-05FD-4C92-978C-7A76B06212E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoyOrGirl_236A", "BoyOrGirl_236A\BoyOrGirl_236A.csproj", "{50BB700E-05FD-4C92-978C-7A76B06212E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Word_56A", "Word_56A\Word_56A.csproj", "{A37A861B-1671-46BE-880E-60D57F94E84A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{50BB700E-05FD-4C92-978C-7A76B06212E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50BB700E-05FD-4C92-978C-7A76B06212E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50BB700E-05FD-4C92-978C-7A76B06212E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A37A861B-1671-46BE-880E-60D57F94E84A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A37A861B-1671-46BE-880E-60D57F94E84A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A37A861B-1671-46BE-880E-60D57F94E84A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A37A861B-1671-46BE-880E-60D57F94E84A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
