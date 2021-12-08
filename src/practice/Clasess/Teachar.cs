@@ -1,6 +1,7 @@
-﻿   class Teachar
+﻿   public class Teachar
     {
-    public int age = 30;
+    internal int age = 30;
     public string name = "Shohaib";
+    private string id;
     }
 
