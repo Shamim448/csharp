@@ -19,6 +19,8 @@ Console.WriteLine(teachar1.Id);
 teachar2.Id = "T-1202555";
 Console.WriteLine(teachar2.Id);
 
+teachar1.DateOfBirth = new DateTime (1993,01,20);
+Console.WriteLine(teachar1.DateOfBirth);
 
 //teachar1.id = "2025515554"; //not found for private
 teachar1.address = "Dhaka";
