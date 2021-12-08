@@ -17,6 +17,8 @@ namespace Clasess
             Console.WriteLine(teachar2.age);
             Console.WriteLine(teachar2.name);
 
+            teachar1.id = "2025515554"; //not found for private
+            teachar1.address = "Dhaka";
         }
     }
 }
