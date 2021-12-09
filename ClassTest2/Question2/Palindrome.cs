@@ -8,20 +8,16 @@ namespace Question2
 {
     public class Palindrome
     {
-        public string text;
+       
         public  bool IsPalindrome(string str)
         {
-            int low = 0;
-            int high = str.Length-1;
-
-            while (low < high)
+            string text = str.ToLower();
+            for (int i = 0; i < text.Length / 2; i++)
             {
-                // if mismatch happens
-                if (str[low] != str[high])
+                if (text[i] != text[text.Length - i - 1])
+                {
                     return false;
-
-                low++;
-                high--;
+                }
             }
 
             return true;

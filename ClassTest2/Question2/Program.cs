@@ -2,6 +2,6 @@
 using System;
 using Question2;
 Palindrome pal = new Palindrome();
-//pal.text = Console.ReadLine().ToLower();
-Console.WriteLine( pal.IsPalindrome("hello"));
+
+Console.WriteLine( pal.IsPalindrome("Madam"));
 
