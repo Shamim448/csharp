@@ -14,7 +14,7 @@ namespace Question2
             string text = str.ToLower();
             for (int i = 0; i < text.Length / 2; i++)
             {
-                if (text[i] != text[text.Length - i - 1])
+                if (text[i] != text[text.Length - 1 - i])
                 {
                     return false;
                 }
