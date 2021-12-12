@@ -29,6 +29,11 @@ public class Teachar
     {
         id = "T-" + DateTime.Now.Ticks;
     }
+        // method overloading
+    public void GenerateNewId(string id)
+        {
+            this.id = "T-" + id;
+        }
         Student student = new Student();
 }
 

@@ -12,10 +12,10 @@ Console.WriteLine(teachar2.age);
 Console.WriteLine(teachar2.name);
 
 teachar1.GenerateNewId();
-teachar2.GenerateNewId();
+teachar2.GenerateNewId("2000");
 Console.WriteLine(teachar1.Id);
 
-teachar2.Id = "T-1202555";
+//teachar2.Id = "T-1202555";
 Console.WriteLine(teachar2.Id);
 
 teachar1.DateOfBirth = new DateTime (1993,01,20);
