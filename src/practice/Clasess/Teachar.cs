@@ -34,6 +34,15 @@ public class Teachar
         {
             this.id = "T-" + id;
         }
+        public void GenerateNewId(string prefix, int id)
+        {
+            this.id = prefix + id;
+        }
+        public void GenerateNewId( int id, string prefix)
+        {
+            this.id = prefix + id;
+            
+        }
         Student student = new Student();
 }
 

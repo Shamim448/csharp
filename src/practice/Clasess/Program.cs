@@ -12,7 +12,8 @@ Console.WriteLine(teachar2.age);
 Console.WriteLine(teachar2.name);
 
 teachar1.GenerateNewId();
-teachar2.GenerateNewId("2000");
+teachar2.GenerateNewId("T-", 100);
+
 Console.WriteLine(teachar1.Id);
 
 //teachar2.Id = "T-1202555";
