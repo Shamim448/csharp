@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "String_Task_118A", "String_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Word_56A", "Word_56A\Word_56A.csproj", "{1831AD6A-581D-461E-B058-C216FBEB2B01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bit++_282A", "Bit++_282A\Bit++_282A.csproj", "{BC382820-DCB3-4736-8647-722C98227C43}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{1831AD6A-581D-461E-B058-C216FBEB2B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1831AD6A-581D-461E-B058-C216FBEB2B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1831AD6A-581D-461E-B058-C216FBEB2B01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC382820-DCB3-4736-8647-722C98227C43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC382820-DCB3-4736-8647-722C98227C43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC382820-DCB3-4736-8647-722C98227C43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC382820-DCB3-4736-8647-722C98227C43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
