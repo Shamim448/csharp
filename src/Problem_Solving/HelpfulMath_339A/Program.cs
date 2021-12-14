@@ -16,7 +16,7 @@ namespace HelpfulMath_339A
 
                 if (i < num.Length - 1)
                 {
-                    Console.Write(num[i]+"+");
+                    Console.Write(num[i] + "+");
                 }
             }
             
