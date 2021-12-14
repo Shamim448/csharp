@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "String_Task_118A", "String_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Word_56A", "Word_56A\Word_56A.csproj", "{1831AD6A-581D-461E-B058-C216FBEB2B01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bit++_282A", "Bit++_282A\Bit++_282A.csproj", "{BC382820-DCB3-4736-8647-722C98227C43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bit++_282A", "Bit++_282A\Bit++_282A.csproj", "{BC382820-DCB3-4736-8647-722C98227C43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpfulMath_339A", "HelpfulMath_339A\HelpfulMath_339A.csproj", "{9E71827D-92EA-4DDA-92EA-477BEEBD95BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpfulMath_339A", "HelpfulMath_339A\HelpfulMath_339A.csproj", "{9E71827D-92EA-4DDA-92EA-477BEEBD95BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatRoom_58A", "ChatRoom_58A\ChatRoom_58A.csproj", "{FDB61398-E05B-44CD-802E-92FA40AF6B12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{9E71827D-92EA-4DDA-92EA-477BEEBD95BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E71827D-92EA-4DDA-92EA-477BEEBD95BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E71827D-92EA-4DDA-92EA-477BEEBD95BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDB61398-E05B-44CD-802E-92FA40AF6B12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB61398-E05B-44CD-802E-92FA40AF6B12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB61398-E05B-44CD-802E-92FA40AF6B12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB61398-E05B-44CD-802E-92FA40AF6B12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
