@@ -11,7 +11,8 @@ namespace Inheritance
         public double Amount { get; set; } //auto property
 
         //Method
-        public double PriceAfterDiscount(double originalPrice) 
+        //"virtual add for method override"
+        public virtual double PriceAfterDiscount(double originalPrice) 
         {
             return originalPrice - Amount;
         }
