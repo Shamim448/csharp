@@ -20,5 +20,9 @@ namespace Inheritance
         {
             return originalPrice - (originalPrice * Amount / 100.0);
         }
+        public void test()
+        {
+
+        }
     }
 }

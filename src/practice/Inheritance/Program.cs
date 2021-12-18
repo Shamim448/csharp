@@ -13,8 +13,10 @@ Console.WriteLine(priceAfterDiscount);
 var afterDiscount = discount.PriceAfterDiscount(2000);
 Console.WriteLine(afterDiscount);
 
+//polymorphism
 Discount polymorphisms = new PercentageDiscount(10);
 var poly = polymorphisms.PriceAfterDiscount(2000);
+ //polymorphisms.test(0) not fount bcz test methid nor available in parent class
 Console.WriteLine(poly);
 
 // var practice
