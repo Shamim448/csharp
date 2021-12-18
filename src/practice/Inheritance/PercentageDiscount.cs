@@ -9,6 +9,12 @@ namespace Inheritance
     //Inherited class
     public class PercentageDiscount : Discount
     {
+        public PercentageDiscount(double amount)
+            : base(amount)
+        {
+            Amount = amount;
+        }
+
         //"Override: use for over write main method from discount class
         public override double PriceAfterDiscount(double originalPrice)
         {
