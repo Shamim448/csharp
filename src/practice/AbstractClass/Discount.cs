@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace AbstractClass
 {
-    public abstract class Discount
+    public abstract class Discount : IDiscount
     {
+       
+        public double Amount { get; set; }
         public Discount(double amount)
         {
-            Amount = amount;
+            // Amount = amount;
         }
-        public double Amount { get; set; }
         public abstract double PriceAfterDiscount(double originalPrice);
         //overload method
         public abstract double PriceAfterDiscount(double originalPrice,  string s);

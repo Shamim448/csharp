@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace AbstractClass
 {
-    internal interface IDiscount
+    public interface IDiscount
     {
+        double Amount { get; set; }
+        double PriceAfterDiscount(double origibalPrice);
+
     }
 }
