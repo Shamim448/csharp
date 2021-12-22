@@ -12,5 +12,9 @@ namespace Shapes
         {
             return Math.PI * Math.Pow(Radius, 2);
         }
+        public override double Periameter()
+        {
+            return 2 * Math.PI * Radius;
+        }
     }
 }

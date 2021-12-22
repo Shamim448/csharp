@@ -11,5 +11,7 @@ namespace Shapes
     {
         
         public abstract double Area ();
+        public abstract double Periameter ();
+        
     }
 }

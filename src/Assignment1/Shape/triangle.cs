@@ -19,5 +19,9 @@ namespace Shapes
         {
             return 0.5 * Width * Height;
         }
+        public override double Periameter()
+        {
+            return 0;
+        }
     }
 }

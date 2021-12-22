@@ -2,8 +2,9 @@
 using Shapes;
 Circle circle = new (15);
 var areaOfCircle = circle.Area(); 
-Console.WriteLine("\nThe radius of circle is: {0} \nThe Area of circle is: {1}", 
-    circle.Radius, areaOfCircle);
+var perimeterOfCircle = circle.Periameter();
+Console.WriteLine("\nThe radius of circle is: {0} \nThe Area of circle is: {1} " +
+    "\nThe Perimeter of circle is: {2}", circle.Radius, areaOfCircle, perimeterOfCircle);
 
 Triangle triangle = new Triangle(10, 15);
 var areaOfTriangle = triangle.Area();
