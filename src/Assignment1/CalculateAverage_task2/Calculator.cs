@@ -7,9 +7,7 @@ using System.Threading.Tasks;
 namespace CalculateAverage_task2
 {
     public static class Calculator
-    {
-        public static double avarages;
-        
+    {       
         public static double CalculateAverage()
         {
             return 0;
