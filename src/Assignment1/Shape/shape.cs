@@ -10,8 +10,8 @@ namespace Shapes
     public abstract class Shape
     {
         
-        public abstract double Area ();
-        public abstract double Periameter ();
+        public abstract double Area();
+        public abstract double Periameter();
         
     }
 }

@@ -9,4 +9,4 @@ Console.WriteLine("\nThe radius of circle is: {0} \nThe Area of circle is: {1} "
 Triangle triangle = new Triangle(10, 15);
 var areaOfTriangle = triangle.Area();
 Console.WriteLine("\nThe width of triangle is: {0} \nThe height of triangle is: {1} " +
-    "\nThe Area of triangle is: {2}", triangle.Width, triangle.Height, areaOfTriangle);
+    "\nThe Area of triangle is: {2}", triangle.Base, triangle.Height, areaOfTriangle);
