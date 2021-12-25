@@ -3,25 +3,27 @@
     public class Car
     {
         public string Model;
-        public string Name = string.Empty;
-        public double EngineType;
+        public string Color;
+        public int Year;
+        public string Status;
         public string CarType = string.Empty;
+        public int speed = 0;
         public Car()
         {
-                        
+           
         }
         //Over Load 1
-        public Car(string model, string name)
+        public Car(string type, string color)
         {
-            this.Model = model;
-            this.Name = name;
+            CarType = type;
+            Color = color;
+
+
         }
         //Overload 2
         public Car(string model, string name, double enginetype)
         {
-            this.Model = model;
-            this.Name = name;
-            this.EngineType = enginetype;
+     
         }
 
         public string Model_ID { get {
@@ -32,5 +34,18 @@
                 Model = value;
             }
         }
+        public void GetCarModel()
+        {
+            Model = "abc-001";
+        }
+        public void Start()
+        {
+            Status = "Car is moving";
+        }
+        public void Stop()
+        {
+            Status = "Car is not moving";
+        }
+
     }
 }
