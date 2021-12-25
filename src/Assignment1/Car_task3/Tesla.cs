@@ -10,9 +10,6 @@ namespace Car_task3
             BrandName = name;
            
         }
-        public void GetCarModel(string model, char prefix)
-        {
-            Model = model+" "+prefix;
-        }
+       
     }
 }

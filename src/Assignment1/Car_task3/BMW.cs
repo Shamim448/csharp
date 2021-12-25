@@ -8,5 +8,13 @@ namespace Car_task3
 {
     internal class BMW : Car
     {
+        public string BrandName;
+        public BMW(string name, string type, string color, int year, int speed) 
+            : base(type, color, year, speed)
+        {
+            BrandName = name;
+
+        }
+        
     }
 }

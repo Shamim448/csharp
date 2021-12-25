@@ -10,16 +10,12 @@ namespace Car_task3
     {
         
             public string BrandName;
-            public Ford(string name, string color, string type, int year) : base(type, color)
+            public Ford(string name,  string type, string color, int year) : base(type, color, year)
             {
                 BrandName = name;
-                Year = year;
-
+                
             }
-            public void GetCarModel(string firstname, string lastname)
-            {
-                Model = firstname +" " + lastname;
-            }
+            
         
     }
 }

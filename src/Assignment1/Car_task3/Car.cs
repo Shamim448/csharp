@@ -7,7 +7,7 @@
         public int Year;
         public string Status;
         public string CarType = string.Empty;
-        public int speed = 0;
+        public int Speed = 0;
         public Car()
         {
            
@@ -21,9 +21,19 @@
 
         }
         //Overload 2
-        public Car(string model, string name, double enginetype)
+        public Car(string type, string color, int year)
         {
-     
+            CarType = type;
+            Color = color;
+            Year = year;
+        }
+        public Car(string type, string color, int year, int speed)
+        {
+            CarType = type;
+            Color = color;
+            Year = year;
+            Speed = speed;
+
         }
 
         public string Model_ID { get {
@@ -37,6 +47,18 @@
         public void GetCarModel()
         {
             Model = "abc-001";
+        }
+        public void GetCarModel(string model, char prefix)
+        {
+            Model = model + " " + prefix;
+        }
+        public void GetCarModel(string firstname, string lastname)
+        {
+            Model = firstname + " " + lastname;
+        }
+        public void GetCarModel(char prefix, string lastname)
+        {
+            Model = prefix + " " + lastname;
         }
         public void Start()
         {
