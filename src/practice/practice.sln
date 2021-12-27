@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractClass", "AbstractCl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringA_to_Z", "StringA_to_Z\StringA_to_Z.csproj", "{E5C20935-753B-41EF-B6B2-AB02E3FAD373}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PertialClass", "PertialClass\PertialClass.csproj", "{DE9EB9E9-DB79-4CEC-B477-715C08108A46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PertialClass", "PertialClass\PertialClass.csproj", "{DE9EB9E9-DB79-4CEC-B477-715C08108A46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structure", "Structure\Structure.csproj", "{74C4AA16-5BF3-4F95-9178-DD9BCAC1C921}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{DE9EB9E9-DB79-4CEC-B477-715C08108A46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE9EB9E9-DB79-4CEC-B477-715C08108A46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE9EB9E9-DB79-4CEC-B477-715C08108A46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C4AA16-5BF3-4F95-9178-DD9BCAC1C921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C4AA16-5BF3-4F95-9178-DD9BCAC1C921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C4AA16-5BF3-4F95-9178-DD9BCAC1C921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C4AA16-5BF3-4F95-9178-DD9BCAC1C921}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
