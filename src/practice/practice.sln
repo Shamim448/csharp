@@ -35,11 +35,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structure", "Structure\Stru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enums", "Enums\Enums.csproj", "{DF0D01EF-B430-4EE4-BB91-BFC32C03A3DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverloading", "OperatorOverloading\OperatorOverloading.csproj", "{156886A7-2467-43BA-BA14-EBB320AF3151}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperatorOverloading", "OperatorOverloading\OperatorOverloading.csproj", "{156886A7-2467-43BA-BA14-EBB320AF3151}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTime", "DateTime\DateTime.csproj", "{253CE46E-4B7C-47A7-8E04-C068D8C39D37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateTime", "DateTime\DateTime.csproj", "{253CE46E-4B7C-47A7-8E04-C068D8C39D37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBuilder", "StringBuilder\StringBuilder.csproj", "{976E3845-D948-4929-AE4C-112B1B11ADCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringBuilder", "StringBuilder\StringBuilder.csproj", "{976E3845-D948-4929-AE4C-112B1B11ADCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParameterModifier", "ParameterModifier\ParameterModifier.csproj", "{88FAD8F0-72F6-4839-904B-71A1290E5401}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{976E3845-D948-4929-AE4C-112B1B11ADCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{976E3845-D948-4929-AE4C-112B1B11ADCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{976E3845-D948-4929-AE4C-112B1B11ADCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88FAD8F0-72F6-4839-904B-71A1290E5401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88FAD8F0-72F6-4839-904B-71A1290E5401}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88FAD8F0-72F6-4839-904B-71A1290E5401}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88FAD8F0-72F6-4839-904B-71A1290E5401}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
