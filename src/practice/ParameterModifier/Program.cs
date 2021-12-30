@@ -11,7 +11,6 @@ Console.WriteLine(results);
 Console.WriteLine("params parameter modifier" + resultArray);
 
 //ref parameter modifier
-
 var x = 5;
 var y = 6;
 Console.WriteLine(x); //normally x = 5

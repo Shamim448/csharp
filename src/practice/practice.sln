@@ -43,6 +43,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringBuilder", "StringBuil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParameterModifier", "ParameterModifier\ParameterModifier.csproj", "{88FAD8F0-72F6-4839-904B-71A1290E5401}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuples", "Tuples\Tuples.csproj", "{CD3E5AC8-7ABA-48B7-A28C-07F1F5D82637}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnnonymousType", "AnnonymousType\AnnonymousType.csproj", "{F48B9C11-10FA-40EB-BE34-F89C34D5A9A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +133,14 @@ Global
 		{88FAD8F0-72F6-4839-904B-71A1290E5401}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88FAD8F0-72F6-4839-904B-71A1290E5401}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88FAD8F0-72F6-4839-904B-71A1290E5401}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD3E5AC8-7ABA-48B7-A28C-07F1F5D82637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD3E5AC8-7ABA-48B7-A28C-07F1F5D82637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD3E5AC8-7ABA-48B7-A28C-07F1F5D82637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD3E5AC8-7ABA-48B7-A28C-07F1F5D82637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F48B9C11-10FA-40EB-BE34-F89C34D5A9A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48B9C11-10FA-40EB-BE34-F89C34D5A9A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48B9C11-10FA-40EB-BE34-F89C34D5A9A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48B9C11-10FA-40EB-BE34-F89C34D5A9A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

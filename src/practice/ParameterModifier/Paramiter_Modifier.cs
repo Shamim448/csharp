@@ -30,7 +30,7 @@ namespace ParameterModifier
         {            
             foreach (object item in list)
             {
-                Console.Write("params parameter modifier =" + item + " ");
+                Console.Write(item + " ");
             }
             Console.WriteLine();// For blank line
         }
