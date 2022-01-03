@@ -32,7 +32,7 @@ namespace Property_of_Class
             //this.Processor = processors;
         }
         //overload
-        public void GetPhoneInfo(string processor, string ram)
+        public virtual void GetPhoneInfo(string processor, string ram)
         {
             Processor = processor;
             RAM = ram;

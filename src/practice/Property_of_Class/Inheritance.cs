@@ -10,10 +10,13 @@ namespace Property_of_Class
     {
         public string Camera { get; set; }
         //method override 
-        public void GetPhoneInfo(string processor, string ram)
+        public override void GetPhoneInfo(string processor, string ram)
         {
             Processor = processor;
             RAM = ram;
         }
     }
 }
+
+
+

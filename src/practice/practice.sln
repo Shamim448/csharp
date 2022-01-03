@@ -51,6 +51,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays_Revise", "Revise\Arr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property_of_Class", "Property_of_Class\Property_of_Class.csproj", "{37A99999-25BE-4C32-9AC9-3E8FD00DCE6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revise_Of_Abstract_Class", "Revise_Of_Abstract_Class\Revise_Of_Abstract_Class.csproj", "{2D2D1B0F-7CBE-4D51-A5C5-BF2D511A0291}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{37A99999-25BE-4C32-9AC9-3E8FD00DCE6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37A99999-25BE-4C32-9AC9-3E8FD00DCE6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37A99999-25BE-4C32-9AC9-3E8FD00DCE6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D2D1B0F-7CBE-4D51-A5C5-BF2D511A0291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D2D1B0F-7CBE-4D51-A5C5-BF2D511A0291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D2D1B0F-7CBE-4D51-A5C5-BF2D511A0291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D2D1B0F-7CBE-4D51-A5C5-BF2D511A0291}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
