@@ -47,7 +47,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tuples", "Tuples\Tuples.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnnonymousType", "AnnonymousType\AnnonymousType.csproj", "{F48B9C11-10FA-40EB-BE34-F89C34D5A9A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays_Revise", "Revise\Arrays\Arrays_Revise.csproj", "{3075E246-D312-419F-B2DD-B3DDA342A04C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays_Revise", "Revise\Arrays\Arrays_Revise.csproj", "{3075E246-D312-419F-B2DD-B3DDA342A04C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property_of_Class", "Property_of_Class\Property_of_Class.csproj", "{37A99999-25BE-4C32-9AC9-3E8FD00DCE6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +149,10 @@ Global
 		{3075E246-D312-419F-B2DD-B3DDA342A04C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3075E246-D312-419F-B2DD-B3DDA342A04C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3075E246-D312-419F-B2DD-B3DDA342A04C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37A99999-25BE-4C32-9AC9-3E8FD00DCE6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37A99999-25BE-4C32-9AC9-3E8FD00DCE6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37A99999-25BE-4C32-9AC9-3E8FD00DCE6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37A99999-25BE-4C32-9AC9-3E8FD00DCE6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
