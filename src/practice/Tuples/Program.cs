@@ -9,13 +9,16 @@ var result = membership.CreateUser("shamim", "ghjgj");
 Console.WriteLine(result.status);
 Console.WriteLine(result.user.Username);
 
+(string, string) phoneinfo = membership.GetPhoneInfo("Mediatec Helloo g31", "128 Gb");
+Console.WriteLine(phoneinfo.Item1);
+Console.WriteLine(phoneinfo.Item2);
 
 
 
 
 //Nullable type
 string address = null;
-int x = null; //can't set null
+//int x = null; //can't set null
 int? y = null; //set null because it's nullable type
 if (y.HasValue)
 {

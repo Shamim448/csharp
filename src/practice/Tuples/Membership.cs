@@ -18,5 +18,11 @@ namespace Tuples
         {
             return AccountCreationStatus.Succes;
         }
+
+        public (string, string) GetPhoneInfo(string processor, string ram)
+        {
+            return (processor, ram);
+            
+        }
     }
 }
