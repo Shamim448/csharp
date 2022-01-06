@@ -39,7 +39,15 @@ namespace Generic
             for(int i= 0; i<_item.Length; i++)
                 _item[i] = null;
         }
-            
+        public K GetItem<K>() where K : ICollection<T>, new()
+        {
+            var items = new K();
+            foreach(T item in _item)
+            {
+                items.Add(item); 
+            }
+            return items;
+        }
             
     }
 }
