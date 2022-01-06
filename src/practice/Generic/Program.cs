@@ -59,14 +59,14 @@ Console.WriteLine("--------Generic Constrain--------");
 GenericWithConstrain<StringBuilder, int> test = new GenericWithConstrain<StringBuilder, int>();
 
 Console.WriteLine("--------Generic Constrain example--------");
-Box<Item> newBook = new Box<Item>();
+Box<Book> newBook = new Box<Book>();
 newBook.Add(new Book() { Name = "C# Complete Refarence", Price = 1800 });
 newBook.Add(new Book() { Name = "Tech Yourself C# ", Price = 1900 });
 newBook.Add(new Book() { Name = "C# Begeiner Guide", Price = 1000 });
 newBook.Add(new Book() { Name = "C# Complete Refarence", Price = 1800 });
 
 
-Box<Item> newShirt = new Box<Item>();
+Box<Shirt> newShirt = new Box<Shirt>();
 newShirt.Add(new Shirt() { Name = "Polo", Color = "Red" });
 newShirt.Add(new Shirt() { Name = "Ledis Tang Top", Color = "Black" });
 //Item can read if arrat was public
@@ -74,10 +74,16 @@ newShirt.Add(new Shirt() { Name = "Ledis Tang Top", Color = "Black" });
 
 // read data from array by method
 
-Book book = (Book)newBook.Get(2);
+Book book = newBook.Get(2);
 Console.WriteLine(book.Name);
 Console.WriteLine(book.Price);
 //NewBook item clear
 newBook.Clear();
 
 
+
+List<Shirt> lists = newShirt.GetItem<List<Shirt>>();
+foreach(var lista in lists)
+{
+    Console.WriteLine(lista);
+}
