@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BoyOrGirl_236A
+namespace HQP_133A
 {
     internal class Program
     {
