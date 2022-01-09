@@ -9,17 +9,17 @@ namespace ImportantInterface
 {
     internal class People : IEnumerable<Person>
     {
-        private Person[] _person;
+        private Person[] _persons;
         private int index;
         public People(int size)
         {
-            _person = new Person[size];
+            _persons = new Person[size];
             index = 0;
 
         }
         public IEnumerator<Person> GetEnumerator()
         {
-           return new PersonEnumeratore(_person);
+           return new PersonEnumeratore(_persons);
         }
 
         IEnumerator IEnumerable.GetEnumerator()
@@ -29,7 +29,7 @@ namespace ImportantInterface
 
         public void Add(Person person)
         {
-            _person[index++] = person;  
+            _persons[index++] = person;  
         }
     }
 }
