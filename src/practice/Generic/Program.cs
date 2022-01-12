@@ -3,13 +3,14 @@ using Generic;
 using System.Collections;
 using System.Text;
 
+
 GenericPoint<int> p2 = new GenericPoint<int>();
 p2.X = 5;
 p2.Y = 5;
 int k = p2.X + p2.Y;
 //i assign multiple type data type just create instance
 //Thos is the one kind of benifit using Generic
-GenericPoint <double> p3 = new GenericPoint<double>();
+GenericPoint<double> p3 = new GenericPoint<double>();
 p3.X = 10.5;
 p3.Y = 6.3;
 double L = p3.X + p3.Y;
@@ -19,7 +20,7 @@ Console.WriteLine(L);
 
 //Object data type
 Point p = new Point();
-p.X = 5; 
+p.X = 5;
 p.Y = 20.6;
 
 //need set type casting because object data type
@@ -40,7 +41,7 @@ foreach (int i in myList)
 {
     Console.WriteLine(i);
 }
-        
+
 Console.WriteLine("--------LinkedList--------");
 LinkedList<int> list = new LinkedList<int>();
 list.AddFirst(5);
@@ -83,7 +84,7 @@ newBook.Clear();
 
 
 List<Shirt> lists = newShirt.GetItem<List<Shirt>>();
-foreach(var lista in lists)
+foreach (var lista in lists)
 {
     Console.WriteLine(lista);
 }
