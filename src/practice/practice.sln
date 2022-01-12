@@ -55,7 +55,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Revise_Of_Abstract_Class", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generic", "Generic\Generic.csproj", "{60E8BA48-5076-42D6-91A9-64B6856D4429}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportantInterface", "ImportantInterface\ImportantInterface.csproj", "{D9EA72FD-DEF2-416C-9E45-8BA2A8B6DD91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImportantInterface", "ImportantInterface\ImportantInterface.csproj", "{D9EA72FD-DEF2-416C-9E45-8BA2A8B6DD91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReviceGenericFromBook", "ReviceGenericFromBook\ReviceGenericFromBook.csproj", "{976DFDC5-0929-4C29-97C5-C16260B68C72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +173,10 @@ Global
 		{D9EA72FD-DEF2-416C-9E45-8BA2A8B6DD91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9EA72FD-DEF2-416C-9E45-8BA2A8B6DD91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9EA72FD-DEF2-416C-9E45-8BA2A8B6DD91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{976DFDC5-0929-4C29-97C5-C16260B68C72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{976DFDC5-0929-4C29-97C5-C16260B68C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{976DFDC5-0929-4C29-97C5-C16260B68C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{976DFDC5-0929-4C29-97C5-C16260B68C72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

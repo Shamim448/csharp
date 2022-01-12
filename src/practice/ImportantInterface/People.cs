@@ -69,7 +69,20 @@ namespace ImportantInterface
 
         public bool Remove(Person item)
         {
-            throw new NotImplementedException();
+           bool result = false;
+            for (int i = 0; i < index; i++)
+            {
+                if(item.Name == _persons[i].Name)
+                {
+                    result = true;
+                    for(int j = i+1; j<index; j++)
+                    {
+                        _persons[j-1] =_persons[j];
+                    }
+                index--;
+                }
+            }
+            return result;
         }
     }
 }
