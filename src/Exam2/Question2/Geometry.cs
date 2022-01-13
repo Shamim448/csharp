@@ -6,11 +6,18 @@ using System.Threading.Tasks;
 
 namespace Question2
 {
-    internal class Geometry 
+    internal class Geometry<T>
     {
-        public static int CalculateRectangleArea(int width, int height)
+        T width;
+        T height;
+        public  <T> CalculateRectangleArea(T width, T height)
+
         {
-            throw new NotImplementedException();
+            width = width;
+            height = height;
+            
+            
+            
         }
     }
 }
