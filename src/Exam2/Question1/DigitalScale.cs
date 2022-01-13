@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Question1
 {
-    internal class DigitalScale
+    internal class DigitalScale<V>
     {
-        public double Weight { get; set; }
+        public V Weight { get; set; }
 
-        public double MeasureWeight(object item)
+        public V MeasureWeight(object item)
         {
             throw new NotImplementedException();
         }

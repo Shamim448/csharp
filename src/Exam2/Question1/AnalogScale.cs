@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Question1
 {
-    internal class AnalogScale
+    internal class AnalogScale<T>
     {
-        public int Weight { get; set; }
+        public T Weight { get; set; }
 
-        public int MeasureWeight(object item)
+        public T MeasureWeight(object item)
         {
             throw new NotImplementedException();
         }
