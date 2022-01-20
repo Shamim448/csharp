@@ -59,7 +59,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImportantInterface", "Impor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericReviceForExam", "GenericReviceForExam\GenericReviceForExam.csproj", "{EE6CBF8B-538D-42D3-B2AC-BA424F0BDAF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportantInterfaceForExam", "ImportantInterfaceForExam\ImportantInterfaceForExam.csproj", "{D3207CC4-2586-4C08-B3A2-9D3A971551A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImportantInterfaceForExam", "ImportantInterfaceForExam\ImportantInterfaceForExam.csproj", "{D3207CC4-2586-4C08-B3A2-9D3A971551A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdonetCRUD", "AdonetCRUD\AdonetCRUD.csproj", "{817A580C-3442-4B61-91B8-F1BCD7228665}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -183,6 +185,10 @@ Global
 		{D3207CC4-2586-4C08-B3A2-9D3A971551A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3207CC4-2586-4C08-B3A2-9D3A971551A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3207CC4-2586-4C08-B3A2-9D3A971551A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{817A580C-3442-4B61-91B8-F1BCD7228665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{817A580C-3442-4B61-91B8-F1BCD7228665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{817A580C-3442-4B61-91B8-F1BCD7228665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{817A580C-3442-4B61-91B8-F1BCD7228665}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
