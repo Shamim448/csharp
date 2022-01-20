@@ -1,7 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
 using AdonetCRUD;
-string connetionString = "Server=DESKTOP-7T438A0\\SQLEXPRESS;Database=CSharpB9;User Id=shamim;Password=saba2005;";
-//var query = "INSERT INTO Students ([Name], DateOfBirth) values ('Abdul Alim', '2010-08-28')";
-var query = "DELETE FROM Students where [Name] like '%shamim hosen%'";
-DataUtility datautility = new DataUtility(connetionString);
-datautility.ExecuteCommend(query);
+string connectionstring = "Server=DESKTOP-DP23GAJ\\SQLEXPRESS;Database=CSharpB9;User Id=shamim;Password=saba2005;";
+//string query = "INSERT INTO Students ([Name], DateOfBrith) values ('Shamim Hosen', '1993-01-10')";
+string name = Console.ReadLine();
+string dateOfBrith = Console.ReadLine();
+string query = "INSERT INTO Students ([Name], DateOfBrith) values (@name, @dateOfBrith)";
+List<(string key, object value)> paramiters = new List<(string key, object value)>();
+paramiters.Add(("name", name));
+paramiters.Add(("dateOfBrith", dateOfBrith));
+DataUtility datautility = new DataUtility(connectionstring);
+datautility.ExecuteCommend(query, paramiters);
