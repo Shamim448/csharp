@@ -7,6 +7,6 @@ string dateOfBrith = Console.ReadLine();
 string query = "INSERT INTO Students ([Name], DateOfBrith) values (@name, @dateOfBrith)";
 List<(string key, object value)> paramiters = new List<(string key, object value)>();
 paramiters.Add(("name", name));
-paramiters.Add(("dateOfBrith", dateOfBrith));
+paramiters.Add(("dateOfbrith", dateOfBrith));
 DataUtility datautility = new DataUtility(connectionstring);
 datautility.ExecuteCommend(query, paramiters);
