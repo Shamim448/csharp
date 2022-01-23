@@ -32,5 +32,26 @@ namespace AdonetCRUD
                 connection.Open();
             commend.ExecuteNonQuery();
         }
+        //Read data
+        public IList<Dictionary<string, object>> DataReader(string query, IList<(string key, object value)> parameters)
+        {
+            SqlConnection connection = new SqlConnection(_connectionString);
+            SqlCommand commend = connection.CreateCommand();
+            commend.CommandText = query;
+            if(connection.State != System.Data.ConnectionState.Open)
+            connection.Open();
+            SqlDataReader reader = commend.ExecuteReader();
+            List<Dictionary<string, object>> rows = new List<Dictionary<string, object>>();
+            while (reader.Read())
+            {
+                Dictionary<string , object> columns = new Dictionary<string, object>();
+                foreach(var column in reader.GetColumnSchema()) 
+                {
+                    columns.Add(column.ColumnName, reader[column.ColumnName]);
+                }
+                rows.Add(columns);
+            }
+            return rows;
+        }
     }
 }
