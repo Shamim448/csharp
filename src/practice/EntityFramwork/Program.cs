@@ -36,10 +36,15 @@ updates.Title = "ASP dot net";
 courseDb.SaveChanges();
 */
 
-//Delete data
+/*//Delete data
 Course delete = courseDb.Courses.Where(x => x.IsActive==false).FirstOrDefault();
 courseDb.Courses.Remove(delete);
 courseDb.SaveChanges();
+*/
+
+//Note: Single value hole variable multiple value hole list use korte hobe
+
+
 
 
 
