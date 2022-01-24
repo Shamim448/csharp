@@ -4,6 +4,7 @@ using EntityFramwork;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EntityFramwork.Migrations
 {
     [DbContext(typeof(CourseDbContext))]
-    partial class CourseDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220124080026_AddTopicTable")]
+    partial class AddTopicTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -47,38 +49,6 @@ namespace EntityFramwork.Migrations
                     b.ToTable("Courses");
                 });
 
-            modelBuilder.Entity("EntityFramwork.CourseStudent", b =>
-                {
-                    b.Property<int>("CourseId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("StudentId")
-                        .HasColumnType("int");
-
-                    b.HasKey("CourseId", "StudentId");
-
-                    b.HasIndex("StudentId");
-
-                    b.ToTable("CourseStudent");
-                });
-
-            modelBuilder.Entity("EntityFramwork.Student", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Students");
-                });
-
             modelBuilder.Entity("EntityFramwork.Topic", b =>
                 {
                     b.Property<int>("Id")
@@ -87,7 +57,7 @@ namespace EntityFramwork.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("CourseId")
+                    b.Property<int?>("CourseId")
                         .HasColumnType("int");
 
                     b.Property<string>("Detail")
@@ -105,46 +75,16 @@ namespace EntityFramwork.Migrations
                     b.ToTable("Topic");
                 });
 
-            modelBuilder.Entity("EntityFramwork.CourseStudent", b =>
-                {
-                    b.HasOne("EntityFramwork.Course", "Course")
-                        .WithMany("CourseStudents")
-                        .HasForeignKey("CourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("EntityFramwork.Student", "Student")
-                        .WithMany("CoursesStudents")
-                        .HasForeignKey("StudentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Course");
-
-                    b.Navigation("Student");
-                });
-
             modelBuilder.Entity("EntityFramwork.Topic", b =>
                 {
-                    b.HasOne("EntityFramwork.Course", "Course")
+                    b.HasOne("EntityFramwork.Course", null)
                         .WithMany("Topics")
-                        .HasForeignKey("CourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Course");
+                        .HasForeignKey("CourseId");
                 });
 
             modelBuilder.Entity("EntityFramwork.Course", b =>
                 {
-                    b.Navigation("CourseStudents");
-
                     b.Navigation("Topics");
-                });
-
-            modelBuilder.Entity("EntityFramwork.Student", b =>
-                {
-                    b.Navigation("CoursesStudents");
                 });
 #pragma warning restore 612, 618
         }

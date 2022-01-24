@@ -13,5 +13,7 @@ namespace EntityFramwork
         public decimal Fees { get; set; }
         public DateTime RegistrationEnd { get; set; }
         public bool IsActive { get; set; }
+        public List<Topic> Topics { get; set; }
+        public List<CourseStudent> CourseStudents { get; set; }
     }
 }

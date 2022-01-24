@@ -15,7 +15,7 @@ namespace EntityFramwork
 
         public CourseDbContext()
         {
-            _connectionString = "Server=DESKTOP-7T438A0\\SQLEXPRESS;Database=CSharpB9;User Id=shamim;Password=saba2005;";
+            _connectionString = "Server=DESKTOP-DP23GAJ\\SQLEXPRESS;Database=CSharpB9;User Id=shamim;Password=saba2005;";
             _assemblyName = Assembly.GetExecutingAssembly().FullName;
         }
         public CourseDbContext( string connectionString, string assembly)
@@ -33,6 +33,31 @@ namespace EntityFramwork
 
             base.OnConfiguring(dbContextOptionsBuilder);
         }
+
+        //many to many
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<CourseStudent>()
+                 .HasKey(cs => new { cs.CourseId, cs.StudentId });
+            //one to many
+            builder.Entity<Course>()
+                .HasMany(p => p.Topics)
+                .WithOne(i => i.Course);
+
+            //many to many
+            builder.Entity<CourseStudent>()
+                .HasOne(pc => pc.Course)
+                .WithMany(p => p.CourseStudents)
+                .HasForeignKey(pc => pc.CourseId);
+            builder.Entity<CourseStudent>()
+                .HasOne(pc => pc.Student)
+                .WithMany(c => c.CoursesStudents)
+                .HasForeignKey(pc => pc.StudentId);
+                
+            base.OnModelCreating(builder);
+        }
+
         public DbSet<Course> Courses { get; set; }
+        public DbSet<Student> Students { get; set; }
     }
 }
