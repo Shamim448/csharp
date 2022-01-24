@@ -15,8 +15,13 @@ namespace EntityFramwork
 
         public CourseDbContext()
         {
-            _connectionString = "";
+            _connectionString = "Server=DESKTOP-7T438A0\\SQLEXPRESS;Database=CSharpB9;User Id=shamim;Password=saba2005;";
             _assemblyName = Assembly.GetExecutingAssembly().FullName;
+        }
+        public CourseDbContext( string connectionString, string assembly)
+        {
+            connectionString = _connectionString;
+            assembly = _assemblyName;
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder)
