@@ -15,7 +15,7 @@ namespace EntityFramwork
 
         public CourseDbContext()
         {
-            _connectionString = "Server=DESKTOP-DP23GAJ\\SQLEXPRESS;Database=CSharpB9;User Id=shamim;Password=saba2005;";
+            _connectionString = "Server=.\\SQLEXPRESS;Database=CSharpB9;User Id=shamim;Password=saba2005;";
             _assemblyName = Assembly.GetExecutingAssembly().FullName;
         }
         public CourseDbContext( string connectionString, string assembly)
