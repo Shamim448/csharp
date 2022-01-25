@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.IO;
-string rootPath = @"I:\FileSystem";
+string rootPath = @"D:\FileSystem";
 /*//read all folder and subfolder
 //string [] dirs = Directory.GetDirectories(rootPath, "*", SearchOption.AllDirectories);
 //read only root folder
@@ -21,3 +21,14 @@ foreach (var file in files)
 {
    Console.WriteLine(Path.GetFileName(file));
 }
+string filename = rootPath + @"\Hello.txt";
+if (!File.Exists(filename))
+{
+    File.Create(filename);
+}
+
+using FileStream stream = File.Open(filename, FileMode.Open);
+byte[] buffer = System.Text.Encoding.UTF8.GetBytes("My name is shamim");
+stream.Write(buffer);
+stream.Flush();
+stream.Close();
