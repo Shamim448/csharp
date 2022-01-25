@@ -22,10 +22,12 @@ foreach (var file in files)
    Console.WriteLine(Path.GetFileName(file));
 }
 string filename = rootPath + @"\Hello.txt";
-if (!File.Exists(filename))
+if (File.Exists(filename))
 {
-    File.Create(filename);
+    File.Delete(filename);
 }
+using FileStream createfile = File.Create(filename);
+createfile.Dispose();
 
 using FileStream stream = File.Open(filename, FileMode.Open);
 byte[] buffer = System.Text.Encoding.UTF8.GetBytes("My name is shamim");
