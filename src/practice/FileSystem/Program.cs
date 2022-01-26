@@ -34,3 +34,8 @@ byte[] buffer = System.Text.Encoding.UTF8.GetBytes("My name is shamim");
 stream.Write(buffer);
 stream.Flush();
 stream.Close();
+//read all text
+string read = File.ReadAllText(filename);
+Console.WriteLine(read);
+stream.Dispose();
+
