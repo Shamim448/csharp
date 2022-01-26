@@ -39,3 +39,18 @@ string read = File.ReadAllText(filename);
 Console.WriteLine(read);
 stream.Dispose();
 
+//fileinfo this is same to file
+FileInfo fileinfo = new FileInfo(filename);
+if (fileinfo.Exists)
+{
+    using FileStream streaminfo = fileinfo.Open(FileMode.Open);
+    long size = fileinfo.Length;
+    for (long i =0; i < size; i++)
+    {
+        byte[] buffers = new byte[1];
+        int reads = streaminfo.Read(buffers);
+        string s = System.Text.Encoding.UTF8.GetString(buffers);
+        Console.Write(s);
+    }
+}
+
