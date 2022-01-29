@@ -10,7 +10,6 @@ foreach (string dir in dirs)
     Console.WriteLine(dir);
 }*/
 //File read 
-
 var files = Directory.GetFiles(rootPath, "*", SearchOption.AllDirectories);
 foreach (var file in files)
 {
@@ -43,14 +42,15 @@ stream.Dispose();
 FileInfo fileinfo = new FileInfo(filename);
 if (fileinfo.Exists)
 {
-    using FileStream streaminfo = fileinfo.Open(FileMode.Open);
+    using FileStream streaminfo = fileinfo.Open(FileMode.);
     long size = fileinfo.Length;
     for (long i =0; i < size; i++)
     {
         byte[] buffers = new byte[1];
-        int reads = streaminfo.Read(buffers);
+        streaminfo.Read(buffers);
         string s = System.Text.Encoding.UTF8.GetString(buffers);
         Console.Write(s);
+
     }
 }
 
