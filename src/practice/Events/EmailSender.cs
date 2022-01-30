@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Events
-{
     public class EmailSender
     {
         public event Action<object, string> Send;
