@@ -13,7 +13,7 @@ namespace Events
 
         public void Activate(string message)
         {
-            click.Invoke(message);
+            click.Invoke("Shamim");
         }
     }
 }

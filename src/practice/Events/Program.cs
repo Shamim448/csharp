@@ -11,3 +11,14 @@ void Printmessage1(string messa)
 {
     Console.WriteLine("Another message:"+messa);
 }
+
+EmailSender sender = new EmailSender();
+
+sender.Send += SendMail;
+sender.BulkEmailSender(new List<string>() { "abc@yahoo.com", "xyz@gmail.com" }, "Test Mail", "Hello World!");
+
+void SendMail(object sender, string message)
+{
+    Console.WriteLine(message);
+    Console.WriteLine(sender);
+}
