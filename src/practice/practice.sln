@@ -65,7 +65,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdonetCRUD", "AdonetCRUD\Ad
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFramwork", "EntityFramwork\EntityFramwork.csproj", "{93F0FC22-C9FD-463F-AD39-501E992421B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystem", "FileSystem\FileSystem.csproj", "{B918F5B8-2650-47A9-B251-3E28CA10F981}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileSystem", "FileSystem\FileSystem.csproj", "{B918F5B8-2650-47A9-B251-3E28CA10F981}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegats\Delegates.csproj", "{13000F4F-F537-46CC-929A-828A551189C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +203,10 @@ Global
 		{B918F5B8-2650-47A9-B251-3E28CA10F981}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B918F5B8-2650-47A9-B251-3E28CA10F981}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B918F5B8-2650-47A9-B251-3E28CA10F981}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13000F4F-F537-46CC-929A-828A551189C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13000F4F-F537-46CC-929A-828A551189C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13000F4F-F537-46CC-929A-828A551189C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13000F4F-F537-46CC-929A-828A551189C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
