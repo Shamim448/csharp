@@ -15,7 +15,7 @@ namespace EntityFrameworkPractice
 
         public MedicineDbContext()
         {
-            _assemblyName = Assembly.GetExecutingAssembly().FullName; ;
+            _assemblyName = Assembly.GetExecutingAssembly().FullName; 
             _connectionString = "Server=.\\SQLEXPRESS; Database = CSharpB9; User Id = csharpb9; Password = 123456;";
         }
         public MedicineDbContext( string conn, string assem)
