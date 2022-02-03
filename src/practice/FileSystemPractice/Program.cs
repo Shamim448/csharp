@@ -4,7 +4,7 @@ if (File.Exists(path))
 {
     File.Delete(path);
 }
-File.Create(path);
+/*File.Create(path);
 var path1 = "../../../Test.txt";
 using FileStream stream = File.Open(path1, FileMode.Create);
 byte[] buffer = System.Text.Encoding.UTF8.GetBytes("Hello World");
@@ -12,7 +12,8 @@ stream.Write(buffer);
 stream.Flush(); 
 stream.Close();
 stream.Dispose();
-
+-*/
+var path1 = "../../../Test.txt";
 FileInfo FileInfo = new FileInfo(path1);
 if (FileInfo.Exists)
 {
