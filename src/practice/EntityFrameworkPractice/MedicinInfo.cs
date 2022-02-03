@@ -13,5 +13,6 @@ namespace EntityFrameworkPractice
         public int Quantity { get; set; }
         public int Price { get; set; } 
         public DateTime PurchaseDate { get; set; }
+        public List<Dispansary> Pharmecy { get; set; }
     }
 }
