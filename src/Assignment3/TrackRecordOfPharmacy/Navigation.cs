@@ -51,7 +51,7 @@ namespace TrackRecordOfPharmacy
             MedicineRecord medicineRecord = new MedicineRecord();
             Console.WriteLine("Please Enter Medicine Name (Ex: Napa)");
             medicineRecord.MName = Console.ReadLine();
-            Console.WriteLine("Please Enter Box Quantity"); 
+            Console.WriteLine("Please Enter Quantity (Ex: 10 Box/Pcs)"); 
             medicineRecord.Quantity = Console.ReadLine();
             dbcontext.Add(medicineRecord);
             Console.WriteLine("Data Insert successfully" + '\n');
@@ -63,10 +63,12 @@ namespace TrackRecordOfPharmacy
         public static void RetriveMedicineRecord()
         {
             var medicineRecords = dbcontext.MedicineRecords.ToList();
-            Console.WriteLine("\nMedicine Stock List");
-            foreach(var medicineInfo in medicineRecords)
-            {
-                Console.WriteLine(medicineInfo.MName  + '\t' + medicineInfo.Quantity );
+            Console.WriteLine("\nMedicine Stock List\n");
+            Console.WriteLine("Medicine Name" + '\t' + "Quantiry");
+
+            foreach (var medicineInfo in medicineRecords)
+            { 
+                Console.WriteLine(medicineInfo.MName  + '\t' + '\t' + medicineInfo.Quantity );
             }
             //Console.WriteLine("\nPlease Press Enter For Back To Home Screen");
             Console.ReadLine();
@@ -77,11 +79,13 @@ namespace TrackRecordOfPharmacy
         {
             Console.WriteLine("\nPlease Enter Medicine Name which you want to Find");
             var Uname =Console.ReadLine();
-            if(Uname != null && Uname != string.Empty) { 
-            var medicineRecords = dbcontext.MedicineRecords.FirstOrDefault(x => x.MName.Contains(Uname) && x.Quantity.Length > 0);
+            if(Uname != null && Uname != string.Empty) {
+                
+                var medicineRecords = dbcontext.MedicineRecords.FirstOrDefault(x => x.MName.Contains(Uname) && x.Quantity.Length > 0);
             //var medicineRecords = dbcontext.MedicineRecords.Where().ToList();
             if(medicineRecords != null) {
-                Console.WriteLine(medicineRecords.MName + '\t' + medicineRecords.Quantity);
+                    Console.WriteLine("Medicine Name" + '\t' + "Quantiry");
+                    Console.WriteLine(medicineRecords.MName + '\t' + '\t' + medicineRecords.Quantity);
                 Console.ReadLine();
             }else
             {
@@ -99,7 +103,7 @@ namespace TrackRecordOfPharmacy
             var medicineRecords = dbcontext.MedicineRecords.FirstOrDefault(x => x.MName.Contains(Uname));
             Console.WriteLine("Please Enter Medicine Name (Ex: Napa)");
             medicineRecords.MName = Console.ReadLine();
-            Console.WriteLine("Please Enter Box Quantity");
+            Console.WriteLine("Please Enter Enter Quantity (Ex: 10 Box/Pcs)");
             medicineRecords.Quantity = Console.ReadLine();
             Console.WriteLine("Data Update successfully" + '\n');
             dbcontext.SaveChanges();
