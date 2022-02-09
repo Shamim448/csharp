@@ -24,6 +24,7 @@ namespace TrackRecordOfPharmacy
             Console.WriteLine("Please type a or b or c or d or e to navigation ");
             
             var options = Console.ReadLine().ToLower();
+            Console.WriteLine(" ");
             switch (options)
             {
                 case "a":
@@ -44,6 +45,7 @@ namespace TrackRecordOfPharmacy
             }
             //If User Press enter call Opening screen
             MenuOption();
+            
         }
         //dbcontext connection
         private static DBContext dbcontext = new DBContext();
@@ -65,24 +67,33 @@ namespace TrackRecordOfPharmacy
         public static void RetriveMedicineRecord()
         {
             var medicineRecords = dbcontext.MedicineRecords.ToList();
+            Console.WriteLine("\nMedicine Stock List");
             foreach(var medicineInfo in medicineRecords)
             {
                 Console.WriteLine(medicineInfo.MName  + '\t' + medicineInfo.Quantity );
             }
             //Console.WriteLine("\nPlease Press Enter For Back To Home Screen");
-            //Console.ReadLine();
+            Console.ReadLine();
         }
 
         //Search Medicine
         public static void SearchMedicineRecord()
         {
-            Console.WriteLine("\nPlease Enter Medicine Name which you want to update");
-            var Uname = Console.ReadLine();
-            var medicineRecords = dbcontext.MedicineRecords.FirstOrDefault(x => x.MName.Contains(Uname) );
+            Console.WriteLine("\nPlease Enter Medicine Name which you want to Find");
+            var Uname =Console.ReadLine();
+            if(Uname != null && Uname != string.Empty) { 
+            var medicineRecords = dbcontext.MedicineRecords.FirstOrDefault(x => x.MName.Contains(Uname) && x.Quantity > 0);
             //var medicineRecords = dbcontext.MedicineRecords.Where().ToList();
-            
-            Console.WriteLine(medicineRecords.MName + '\t' + medicineRecords.Quantity );
-            Console.ReadLine();
+            if(medicineRecords != null) {
+                Console.WriteLine(medicineRecords.MName + '\t' + medicineRecords.Quantity);
+                Console.ReadLine();
+            }else
+            {
+                Console.WriteLine(Uname + " Not Available Right Now");
+                Console.ReadLine();
+            }
+            }
+
         }
         //Update Medicine
         static void UpdateMedicineRecord()
