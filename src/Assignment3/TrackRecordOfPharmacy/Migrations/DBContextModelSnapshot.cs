@@ -32,8 +32,8 @@ namespace TrackRecordOfPharmacy.Migrations
                     b.Property<string>("MName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
+                    b.Property<string>("Quantity")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
 

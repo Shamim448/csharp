@@ -8,8 +8,6 @@ namespace TrackRecordOfPharmacy
 {
     public class Navigation
     {
-        
-
         //Opeaning Screen Menu
         public static void MenuOption()
         {
@@ -22,7 +20,6 @@ namespace TrackRecordOfPharmacy
             Console.WriteLine("d. Remove Medicin");
             Console.WriteLine("e. Exit Medicin");
             Console.WriteLine("Please type a or b or c or d or e to navigation ");
-            
             var options = Console.ReadLine().ToLower();
             Console.WriteLine(" ");
             switch (options)
@@ -45,7 +42,6 @@ namespace TrackRecordOfPharmacy
             }
             //If User Press enter call Opening screen
             MenuOption();
-            
         }
         //dbcontext connection
         private static DBContext dbcontext = new DBContext();
@@ -56,7 +52,7 @@ namespace TrackRecordOfPharmacy
             Console.WriteLine("Please Enter Medicine Name (Ex: Napa)");
             medicineRecord.MName = Console.ReadLine();
             Console.WriteLine("Please Enter Box Quantity"); 
-            medicineRecord.Quantity = Convert.ToInt32(Console.ReadLine());
+            medicineRecord.Quantity = Console.ReadLine();
             dbcontext.Add(medicineRecord);
             Console.WriteLine("Data Insert successfully" + '\n');
             dbcontext.SaveChanges();
@@ -82,7 +78,7 @@ namespace TrackRecordOfPharmacy
             Console.WriteLine("\nPlease Enter Medicine Name which you want to Find");
             var Uname =Console.ReadLine();
             if(Uname != null && Uname != string.Empty) { 
-            var medicineRecords = dbcontext.MedicineRecords.FirstOrDefault(x => x.MName.Contains(Uname) && x.Quantity > 0);
+            var medicineRecords = dbcontext.MedicineRecords.FirstOrDefault(x => x.MName.Contains(Uname) && x.Quantity.Length > 0);
             //var medicineRecords = dbcontext.MedicineRecords.Where().ToList();
             if(medicineRecords != null) {
                 Console.WriteLine(medicineRecords.MName + '\t' + medicineRecords.Quantity);
@@ -104,7 +100,7 @@ namespace TrackRecordOfPharmacy
             Console.WriteLine("Please Enter Medicine Name (Ex: Napa)");
             medicineRecords.MName = Console.ReadLine();
             Console.WriteLine("Please Enter Box Quantity");
-            medicineRecords.Quantity = Convert.ToInt32(Console.ReadLine());
+            medicineRecords.Quantity = Console.ReadLine();
             Console.WriteLine("Data Update successfully" + '\n');
             dbcontext.SaveChanges();
             RetriveMedicineRecord();

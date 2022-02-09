@@ -10,7 +10,7 @@ namespace TrackRecordOfPharmacy
     {
         public int ID { get; set; } 
         public string? MName { get; set; }
-        public int Quantity { get; set; }
+        public string? Quantity { get; set; }
        
     }
 }
