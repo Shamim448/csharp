@@ -53,7 +53,29 @@ namespace Array // Note: actual namespace depends on the project name.
                     Console.WriteLine("Value[{0},{1}] : {2}", i, j, a[i, j]);
                 }
             }
+            //-------------Jagged array-------------------
+            int[][] jaggedArray = new int[2][]; //we can create multiple array between 2 array
+            jaggedArray[0] = new int[2];
+            jaggedArray[1] = new int[] {2,6,8,9};
+            jaggedArray[1] = new int[3]{2,6,8};
 
+            //another way declar & initilize with size
+            int[][] b = new int[2][] { new int[3], new int[2] };
+            //another way declar & initilize without size
+            int[][] c = new int[][] { new int[] {2, 4, 6}, new int[] {},  };
+
+            int[][] jArray = new int[][] { 
+                new int[] {2, 4, 6}, 
+                new int[] {12,5,9,6},  
+                new int[] {3,8},  
+            };
+            // Accessing jagged array
+            for(int i = 0; i < jArray.GetLength(0); i++) { //we can also used Length intiated of GetLength()
+                for(int j= 0; j < jArray[i].Length; j++)
+                {
+                    Console.WriteLine("Element[{0},{1}] : {2}", i, j, jArray[i][j]);
+                }
+            }
         }
     }
 }
