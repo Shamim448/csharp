@@ -79,7 +79,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileSystemPractice", "FileS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionHandaling", "ExceptionHandaling\ExceptionHandaling.csproj", "{88F68C04-7253-4DA1-A36D-25A040076B49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array", "Array\Array.csproj", "{766AA927-1514-47BD-BBC8-B94A1822F45D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Array", "Array\Array.csproj", "{766AA927-1514-47BD-BBC8-B94A1822F45D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "graphInput", "graphInput\graphInput.csproj", "{1E31E485-2BD1-4048-B4CE-28F134083CF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -243,6 +245,10 @@ Global
 		{766AA927-1514-47BD-BBC8-B94A1822F45D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{766AA927-1514-47BD-BBC8-B94A1822F45D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{766AA927-1514-47BD-BBC8-B94A1822F45D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E31E485-2BD1-4048-B4CE-28F134083CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E31E485-2BD1-4048-B4CE-28F134083CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E31E485-2BD1-4048-B4CE-28F134083CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E31E485-2BD1-4048-B4CE-28F134083CF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
