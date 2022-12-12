@@ -5,12 +5,17 @@
         static void Main(string[] args)
         {
             Teacher Teachar = new Teacher();
-            Teachar.id = 1;
+            Teachar.age = 30;
             Teachar.name = "test";
+            Teachar.generateId();
 
             Teacher teachar1 = new Teacher();
-            teachar1.id = 2;
+            teachar1.age = 29;
             teachar1.name = "saba";
+            teachar1.generateId();
+            Console.WriteLine( teachar1.Id );
+            Console.WriteLine( Teachar.id );//id private
+            
         }
     }
 }
