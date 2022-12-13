@@ -4,17 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Teacher Teachar = new Teacher();
-            Teachar.age = 30;
-            Teachar.name = "test";
-            Teachar.generateId();
-
-            Teacher teachar1 = new Teacher();
-            teachar1.age = 29;
-            teachar1.name = "saba";
-            teachar1.generateId();
-            Console.WriteLine( teachar1.Id );
-            Console.WriteLine( Teachar.id );//id private
+            Rectangle r = new Rectangle();
+            r.length = 10;
+            r.width = 15;
+            r.Display();
+            r.calculateArea()  // Not accessable because of private
+            Console.ReadLine();
             
         }
     }
