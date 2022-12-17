@@ -8,8 +8,9 @@ namespace Inheritance
 {
     public class Discount
     {
-        public Discount() {
+        public  Discount(int amount) {
             Console.WriteLine("Parent Constractor");
+            Amout = amount;
            
         }
         public int Amout { get; set; }

@@ -9,7 +9,8 @@ namespace Inheritance
     //Inherited class
     public class PercentageDiscount : Discount
     {
-        public PercentageDiscount() {
+        public PercentageDiscount(int amount) : base(amount)
+            {
             Console.WriteLine("Chield Constractor");
         }
         public override int priceAfterDiscount(int originalPrice)
