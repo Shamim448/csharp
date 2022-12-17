@@ -8,19 +8,16 @@ namespace Inheritance
 {
     public class Discount
     {
-        public double Amount { get; set; } //auto property
-        //constructor 
-        public Discount(double amount)
-        {
-            Amount = amount;
-        }
+        public Discount(int amount) {
+            Console.WriteLine("Parent Constractor");
+            Amout = amount;
 
-        //Method
-        //"virtual add for method override"
-        public virtual double PriceAfterDiscount(double originalPrice) 
-        {
-            return originalPrice - Amount;
         }
-
+        public int Amout { get; set; }
+        public virtual int priceAfterDiscount(int originalPrice)
+        {
+            return originalPrice - Amout;
+        }
+       
     }
 }
