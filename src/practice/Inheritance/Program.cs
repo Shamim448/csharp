@@ -18,6 +18,15 @@ namespace Inheritance
             //p.Amout = 10;
             double myResult = p.priceAfterDiscount(120);
             Console.WriteLine(myResult);
+
+            //Example for polymorphism
+            Discount poly = new PercentageDiscount(15); //create instance Disscount through child class
+            Console.WriteLine(poly.priceAfterDiscount(120));
+            //poly.test(); //poly do not find test method because it deckear child classes
+
+            
+
+
         }
     }
 }

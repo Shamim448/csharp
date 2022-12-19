@@ -17,5 +17,10 @@ namespace Inheritance
         {
             return originalPrice - ((originalPrice * Amout) /100);
         }
+        // Create method for test polymorphism
+        public void test()
+        {
+
+        }
     }
 }

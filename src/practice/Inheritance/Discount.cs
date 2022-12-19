@@ -11,7 +11,6 @@ namespace Inheritance
         public  Discount(int amount) {
             Console.WriteLine("Parent Constractor");
             Amout = amount;
-           
         }
         public int Amout { get; set; }
         public virtual int priceAfterDiscount(int originalPrice)
