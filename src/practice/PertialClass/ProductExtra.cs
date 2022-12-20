@@ -8,10 +8,10 @@ namespace PertialClass
 {
     internal partial class Product
     {
-        public string Description { get; set; } 
-        public string ShortDescription(int length)
+       public string productCode { get; set; }
+        public void productSummery()
         {
-            return Name + "(" + Description.Substring(0, length) + ")";
+            Console.WriteLine("Product Code : {0} Product Name : {1} ", productCode, Name); //name come from partial class
         }
     }
 }

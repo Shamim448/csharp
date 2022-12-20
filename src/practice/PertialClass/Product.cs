@@ -8,13 +8,12 @@ namespace PertialClass
 {
     internal partial class Product
     {
-        public int X { get; set; }
-        public int Y { get; set; }
-        public string Name { get; set; }
-        public double Price { get; set; }
-        public double CalculatrDiscount(double discountPercentage)
+      public string Name { get; set; }
+      public string Description { get; set; }
+      public double Amount { get; set; }
+      public double PriceAfterDiscount(int discoutPrice)
         {
-            return (Price * discountPercentage / 100);
+            return Amount - discoutPrice;
         }
     }
 }
