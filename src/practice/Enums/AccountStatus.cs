@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace Enums
 {
-    internal enum AccountStatus
+    public enum AccountStatus
     {
-        pending,
-        emailverifaied,
-        acctive,
-        canceled,
-        blocked,
+        Active,
+        Pending,
+        Blocked,
+        Canceled,
     }
 }

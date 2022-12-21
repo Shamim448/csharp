@@ -2,18 +2,16 @@
 
 using Enums;
 
-AccountStatus accountStatus = GetStatus();
-
-    if(accountStatus == AccountStatus.pending)
+AccountStatus accStatus = getStatus();
+if(accStatus == AccountStatus.Pending)
 {
-    Console.WriteLine(accountStatus);
+    Console.WriteLine("Your account is {0}", accStatus);
 }
-    if(accountStatus == AccountStatus.acctive)
+if(accStatus == AccountStatus.Active)
 {
-    //enum associated with integer value which start 0
-    Console.WriteLine(accountStatus +  " " + (int)accountStatus);
+    Console.WriteLine("Your account is {0}", accStatus);
 }
-AccountStatus GetStatus()
+AccountStatus getStatus()
 {
-    return AccountStatus.acctive;
+    return AccountStatus.Active;
 }
