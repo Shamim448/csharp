@@ -91,7 +91,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abstract_Class", "Abstract_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceApp", "InterfaceApp\InterfaceApp.csproj", "{94614DCC-50AC-4651-88C3-BEE39453F4CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructureApp", "StructureApp\StructureApp.csproj", "{4D1F72D9-43C0-427B-9F96-102E6955D222}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StructureApp", "StructureApp\StructureApp.csproj", "{4D1F72D9-43C0-427B-9F96-102E6955D222}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuolesApps", "TuolesApps\TuolesApps.csproj", "{C66F00F6-6850-4E4B-91A3-D2D13529166B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -279,6 +281,10 @@ Global
 		{4D1F72D9-43C0-427B-9F96-102E6955D222}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D1F72D9-43C0-427B-9F96-102E6955D222}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D1F72D9-43C0-427B-9F96-102E6955D222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C66F00F6-6850-4E4B-91A3-D2D13529166B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C66F00F6-6850-4E4B-91A3-D2D13529166B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C66F00F6-6850-4E4B-91A3-D2D13529166B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C66F00F6-6850-4E4B-91A3-D2D13529166B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
