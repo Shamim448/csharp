@@ -31,12 +31,7 @@ namespace GenericsApps
         }
         public T Get(int index)
         {
-            if (index < _items.Length)
-            {
-                return _items[index];
-            }
-            else
-                return default(T);
+            return index < _items.Length ? _items[index] : default(T);
         }
         public void Clear()
         {
