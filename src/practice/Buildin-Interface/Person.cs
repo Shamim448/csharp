@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Buildin_Interface
 {
-    public class Person
+    public class Person:ICloneable
     {
         public string Name { get; set; }
+
+        public object Clone()
+        {
+            return new Person() { Name = Name };s
+        }
     }
 }

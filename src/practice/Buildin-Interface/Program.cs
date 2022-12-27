@@ -15,4 +15,6 @@ people.Add(new Person { Name = "Saba" });
 foreach (var person in people)
 {
     Console.WriteLine("After clear : {0}", person.Name);
+    Person p = (Person)person.Clone();
+    Console.WriteLine(p.Name);
 }
