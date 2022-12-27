@@ -11,7 +11,10 @@ Box<Shart> s= new Box<Shart>();
 s.Add(new Shart() { Name = "Formal", Color = "Red" });
 s.Add(new Shart() { Name = "Casual", Color = "Black" });
 
-Book book = b.Get(3);
+Book book = b.Get(2);
 Console.WriteLine(book.Name);
+
+//Shart shart = s.Get(3);
+//Console.WriteLine(shart.Name);
 
 
