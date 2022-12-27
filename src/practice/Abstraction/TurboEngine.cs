@@ -8,12 +8,12 @@ namespace Abstraction
 {
     internal class TurboEngine : IEngine
     {
-        public int CurrentSpeed { get; set; }
+        public String Status { get; set; }
         public void Start()
         {
-            CurrentSpeed = 100;
+            Status = "Engine Started";
             //something write here
-            Console.WriteLine(CurrentSpeed);
+            Console.WriteLine(Status);
         }
     }
 }
