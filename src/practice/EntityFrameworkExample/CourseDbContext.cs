@@ -14,7 +14,7 @@ namespace EntityFrameworkExample
         private readonly string _assemblyName;
 
         public CourseDbContext() {
-            _connectionString = "Server = IT-SHAMIM\\SQLEXPRESS; Database = CSharpB9; User Id = Shamim; Password = saba2005";
+            _connectionString = "Server =.\\SQLEXPRESS; Trusted_Connection = True; Encrypt = False; Database = CSharpB9; User Id = sa; Password = saba2005";
             _assemblyName = Assembly.GetExecutingAssembly().FullName;
         }
 
@@ -31,6 +31,7 @@ namespace EntityFrameworkExample
             {
                 dbContextOptionsBuilder.UseSqlServer(_connectionString, m => m.MigrationsAssembly(_assemblyName));
             }
+
             base.OnConfiguring(dbContextOptionsBuilder);
         }
         public DbSet<Course> Courses { get; set; }
