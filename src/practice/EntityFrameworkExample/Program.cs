@@ -23,11 +23,18 @@ CourseDbContext courseDb = new();
 //Course course = courseDb.Courses.Where(x => x.Id == 3).FirstOrDefault();
 //courseDb.Courses.Remove(course);
 //courseDb.SaveChanges();
-
+/*
 //Get all example
-
 List< Course > courses = courseDb.Courses.ToList();
 foreach( var item in courses)
 {
     Console.WriteLine(item.Name);
+}*/
+
+//Update value
+List <Course> courses = courseDb.Courses.Where(x => x.Name.Contains("c")).ToList();
+for(int i = 0; i< courses.Count; i++)
+{
+    courses[i].Description = "Proffessional c#";
 }
+courseDb.SaveChanges();
