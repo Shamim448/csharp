@@ -31,10 +31,36 @@ foreach( var item in courses)
     Console.WriteLine(item.Name);
 }*/
 
+/*
 //Update value
 List <Course> courses = courseDb.Courses.Where(x => x.Name.Contains("c")).ToList();
 for(int i = 0; i< courses.Count; i++)
 {
     courses[i].Description = "Proffessional c#";
 }
+courseDb.SaveChanges();
+*/
+
+//new coursw
+Course newCourse = new();
+newCourse.Name = "Devopps";
+newCourse.Fee = 20000;
+newCourse.StartDate = DateTime.Now;
+newCourse.Description = "Devopps Basic to advance";
+
+//create topic
+Topic topic = new();
+topic.Name = "Getting Started";
+topic.Detail = "Tools Installation";
+Topic topic2 = new();
+topic2.Name = "Getting Started";
+topic2.Detail = "Tools Installation";
+
+//Topic add to course
+newCourse.Topics = new List<Topic>();
+newCourse.Topics.Add(topic);
+newCourse.Topics.Add(topic2);
+
+//new courses add to courses
+courseDb.Courses.Add(newCourse);
 courseDb.SaveChanges();

@@ -14,5 +14,6 @@ namespace EntityFrameworkExample
         public DateTime StartDate { get; set; }
         public string? Description { get; set; }
 
+        public List <Topic> Topics { get; set; }
     }
 }
