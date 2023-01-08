@@ -40,7 +40,8 @@ for(int i = 0; i< courses.Count; i++)
 }
 courseDb.SaveChanges();
 */
-
+/*
+ * One to many
 //new coursw
 Course newCourse = new();
 newCourse.Name = "Devopps";
@@ -63,4 +64,31 @@ newCourse.Topics.Add(topic2);
 
 //new courses add to courses
 courseDb.Courses.Add(newCourse);
+courseDb.SaveChanges();
+*/
+//select 2 course from database
+var cSharp = courseDb.Courses.Where(x => x.Name == "C#").FirstOrDefault();
+//var devopps = courseDb.Courses.Where(x => x.Name == "Devopps").FirstOrDefault();
+
+//create student
+Student student1 = new();
+student1.Name = "Anika";
+var student2 = new Student();
+student2.Name = "S.A Shamim";
+//student add to coursestudent
+CourseStudent courseStudent1 = new();
+courseStudent1.Student = student1;
+CourseStudent courseStudent2 = new();
+courseStudent2.Student = student2;
+//Add coursestudent in course
+cSharp.CourseStudent = new List<CourseStudent>
+{
+    courseStudent1,
+    courseStudent2
+};
+/*
+devopps.CourseStudent = new List<CourseStudent> {
+    courseStudent1,
+    courseStudent2
+};*/
 courseDb.SaveChanges();

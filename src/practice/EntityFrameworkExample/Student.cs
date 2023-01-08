@@ -6,16 +6,10 @@ using System.Threading.Tasks;
 
 namespace EntityFrameworkExample
 {
-    public class Course
+    public class Student
     {
         public int Id { get; set; }
-        public string? Name { get; set; }
-        public int Fee { get; set; }
-        public DateTime StartDate { get; set; }
-        public string? Description { get; set; }
-
-        public List <Topic> Topics { get; set; }
+        public string Name { get; set; }
         public List<CourseStudent> CourseStudent { get; set; }
-
     }
 }

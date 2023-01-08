@@ -34,7 +34,16 @@ namespace EntityFrameworkExample
 
             base.OnConfiguring(dbContextOptionsBuilder);
         }
+
+        //Overload for many to many primary key generation
+         protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<CourseStudent>().HasKey(cs => new { cs.CourseId, cs.StudentId });
+            base.OnModelCreating(builder);
+        }
         public DbSet<Course> Courses { get; set; }
+        public DbSet<Student> Students { get; set; }
+
 
     }
 }
