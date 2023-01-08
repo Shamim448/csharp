@@ -68,7 +68,7 @@ courseDb.SaveChanges();
 */
 //select 2 course from database
 var cSharp = courseDb.Courses.Where(x => x.Name == "C#").FirstOrDefault();
-//var devopps = courseDb.Courses.Where(x => x.Name == "Devopps").FirstOrDefault();
+var devopps = courseDb.Courses.Where(x => x.Name == "Devopps").FirstOrDefault();
 
 //create student
 Student student1 = new();
@@ -86,9 +86,9 @@ cSharp.CourseStudent = new List<CourseStudent>
     courseStudent1,
     courseStudent2
 };
-/*
+
 devopps.CourseStudent = new List<CourseStudent> {
     courseStudent1,
     courseStudent2
-};*/
+};
 courseDb.SaveChanges();
