@@ -1,7 +1,8 @@
-﻿namespace DelegatesExample
+
+namespace DelegatesExample
 {
     internal class Delegates
     {
-        public delegate int Calculate(int x,int y);
+        public delegate int Calculate(int x, int y);
     }
 }
