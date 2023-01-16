@@ -107,9 +107,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdoNet", "AdoNet\AdoNet.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkExample", "EntityFrameworkExample\EntityFrameworkExample.csproj", "{F8334F8A-D301-4759-8260-387A595627E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystems", "FileSystems\FileSystems.csproj", "{C8E44383-A3D6-4FD6-A3AC-01994F5F8C41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileSystems", "FileSystems\FileSystems.csproj", "{C8E44383-A3D6-4FD6-A3AC-01994F5F8C41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesExample", "DelegatesExample\DelegatesExample.csproj", "{8FD61BB5-841B-4404-BAA4-571676495EA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegatesExample", "DelegatesExample\DelegatesExample.csproj", "{8FD61BB5-841B-4404-BAA4-571676495EA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsExample", "EventsExample\EventsExample.csproj", "{EF62285F-6081-4C37-B0BD-F52F08222378}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -333,6 +335,10 @@ Global
 		{8FD61BB5-841B-4404-BAA4-571676495EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FD61BB5-841B-4404-BAA4-571676495EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FD61BB5-841B-4404-BAA4-571676495EA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF62285F-6081-4C37-B0BD-F52F08222378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF62285F-6081-4C37-B0BD-F52F08222378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF62285F-6081-4C37-B0BD-F52F08222378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF62285F-6081-4C37-B0BD-F52F08222378}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
